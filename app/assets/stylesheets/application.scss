@@ -10,3 +10,61 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+// Variables
+$primary-color: #2c3e50;
+$secondary-color: #3498db;
+$accent-color: #e74c3c;
+$background-light: #ecf0f1;
+$text-dark: #2c3e50;
+$border-radius: 12px;
+$box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+// Global styles
+body {
+  background-color: $background-light;
+  font-family: 'Inter', sans-serif;
+}
+
+// Card styles with hover effects
+.card {
+  border: none;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-title {
+    color: $primary-color;
+    font-weight: 600;
+  }
+}
+
+// Button styles
+.btn-custom {
+  background: linear-gradient(45deg, $secondary-color, #5dade2);
+  border: none;
+  border-radius: $border-radius;
+  padding: 12px 24px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: $box-shadow;
+  }
+}
+
+// Movie item styles
+.movie-item {
+  background: white;
+  border-radius: $border-radius;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: $box-shadow;
+  border-left: 4px solid $secondary-color;
+}
